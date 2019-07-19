@@ -40,12 +40,12 @@ void charByChar(){
     int c;
 #ifdef _WIN32
     printf("Windows\n"); 
-    FILE *Rfile = fopen("C:\\temp\\coursein\\p1-in.txt", "r");
-    FILE *Wfile = fopen("C:\\temp\\courseout\\p1-out.txt", "w");
+    FILE *Rfile = fopen("C:\\temp\\in.txt", "r");    //input windows file location here
+    FILE *Wfile = fopen("C:\\temp\\out.txt", "w");   //output windows file location here
 #elif __linux__
     printf("Linux\n");
-    FILE *Rfile = fopen("~/temp/coursein/p1-in.txt", "r");
-    FILE *Wfile = fopen("~/temp/courseout/p1-out.txt", "w");
+    FILE *Rfile = fopen("~/temp/in.txt", "r");       //input linux file location here
+    FILE *Wfile = fopen("~/temp/out.txt", "w");      //output linux file location here
 #else 
 #error "Please use a Linux or Windows System\n"
 #endif
